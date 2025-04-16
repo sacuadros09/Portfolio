@@ -1,10 +1,45 @@
-/* Sección que contiene todos los botones */
-.carrousel {
+/* Sección completa del carrusel */
+.carrousel-section {
     display: flex;
+    width: 1119px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+  }
+  
+  /* Líneas superior e inferior */
+  .carrousel-line {
     width: 1118px;
+    height: 1px;
+    background: #104469;
+  }
+  
+  /* Contenedor principal del carrusel */
+  .carrousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1118px;
+    overflow: hidden; /* Oculta los elementos que están fuera del ancho */
+    position: relative;
+  }
+  
+  /* Sección que contiene todos los botones */
+  .carrousel {
+    display: flex;
+    gap: 20px;
     height: 51px;
-    justify-content: flex-end;
     align-items: center;
     flex-shrink: 0;
-    gap: 20px;
+    animation: scroll 20s linear infinite; /* Ajusta la duración según el contenido */
+  }
+  
+  /* Animación de desplazamiento continuo */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-32%); /* Desplaza solo la mitad del contenido */
+    }
   }
