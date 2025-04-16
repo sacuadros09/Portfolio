@@ -1,0 +1,82 @@
+/* Estilos generales para los botones del carrusel */
+.carrousel-button {
+    display: flex;
+    height: 51px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #041624;
+    background: #020E16;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .carrousel-button:hover {
+    background: #041624;
+    transform: scale(1.1);
+  }
+  
+  /* Tipografía para el texto de los botones */
+  .carrousel-text {
+    color: #00D8FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  /* Estilos específicos para los íconos */
+.carrousel-button .icon-react {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-figma {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-postgresql {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-blender {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-premier {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-python {
+    width: 33px;
+    height: 33px;
+  }
+  
+  .carrousel-button .icon-typescript {
+    width: 31px;
+    height: 31px;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .carrousel-button .icon-javascript {
+    width: 31px;
+    height: 31px;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .carrousel-button .icon-html {
+    width: 34px;
+    height: 31px;
+  }
+  
+  .carrousel-button .icon-css {
+    width: 29.893px;
+    height: 34.311px;
+    flex-shrink: 0;
+  }

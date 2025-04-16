@@ -1,4 +1,6 @@
+import "./portfolio.css"
 import { Home } from "../../components/Home/home";
+import { Carrousel } from "../../components/Carrousel/carrousel";
 
 export default function Portfolio() {
   const titles = {
@@ -24,6 +26,19 @@ export default function Portfolio() {
     alt: "Santiago Cuadros",
   };
 
+  const carrouselItems = [
+    { icon: "/react-logo.png", text: "React", className: "icon-react" },
+    { icon: "/typescript-logo.png", text: "Typescript", className: "icon-typescript" },
+    { icon: "/javascript-logo.png", text: "Javascript", className: "icon-javascript" },
+    { icon: "/html-logo.png", text: "HTML", className: "icon-html" },
+    { icon: "/css-logo.png", text: "CSS", className: "icon-css" },
+    { icon: "/figma-logo.png", text: "Figma", className: "icon-figma" },
+    { icon: "/postgresql-logo.png", text: "PostgreSQL", className: "icon-postgresql" },
+    { icon: "/blender-logo.png", text: "Blender", className: "icon-blender" },
+    { icon: "/premier-logo.png", text: "Premier", className: "icon-premier" },
+    { icon: "/python-logo.png", text: "Python", className: "icon-python" },
+  ];
+
   return (
     <div>
       <Home
@@ -33,6 +48,8 @@ export default function Portfolio() {
         buttons={buttons}
         image={image}
       />
+      {/* Carrusel */}
+      <Carrousel items={carrouselItems} />
     </div>
   );
 }

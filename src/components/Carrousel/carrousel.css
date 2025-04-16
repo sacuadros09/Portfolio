@@ -1,0 +1,10 @@
+/* Sección que contiene todos los botones */
+.carrousel {
+    display: flex;
+    width: 1118px;
+    height: 51px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 20px;
+  }
