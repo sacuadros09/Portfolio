@@ -20,7 +20,7 @@ export default function Portfolio() {
   ];
 
   const image = {
-    src: "/assets/cuadros-img.png",
+    src: "/cuadros-img.png",
     alt: "Santiago Cuadros",
   };
 

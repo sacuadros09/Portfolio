@@ -7,8 +7,9 @@
     align-items: center;
     gap: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
     font-size: 16px;
+    color: #FFFFFF !important;
 }
 
 .navbar-text-about{
@@ -20,6 +21,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 700; /* Bold */
   font-size: 16px;
+  color: #FFFFFF; 
 }
 
 .navbar-text-projects{
@@ -31,6 +33,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700; /* Bold */
     font-size: 16px;
+    color: #FFFFFF; 
 }
 
 .navbar-text-experience{
@@ -42,7 +45,27 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700; /* Bold */
     font-size: 16px;
+    color: #FFFFFF; 
 }
+
+.navbar-text-home a,
+.navbar-text-about a,
+.navbar-text-projects a,
+.navbar-text-experience a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #FFFFFF !important; /* Fuerza el color blanco */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+}
+
+.navbar-text-home a:hover,
+.navbar-text-about a:hover,
+.navbar-text-projects a:hover,
+.navbar-text-experience a:hover {
+    color: #1D9CD9; /* Cambia el color al pasar el cursor (opcional) */
+}
+
 
 
 
