@@ -1,0 +1,20 @@
+.navbar-logo img {
+    width: 47px;
+    height: 38px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    width: 514px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+
+  .navbar {
+    display: flex;
+    width: 1118px;
+    justify-content: space-between;
+    align-items: center;
+  }
