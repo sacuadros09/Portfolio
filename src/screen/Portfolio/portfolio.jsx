@@ -3,6 +3,7 @@ import { Home } from "../../components/Home/home";
 import { Carrousel } from "../../components/Carrousel/carrousel";
 import { Projects } from "../../components/Projects/projects";
 import { Experience } from "../../components/Experience/work_experience";
+import { AboutMe } from "../../components/About Me/about_me";
 
 export default function Portfolio() {
   const titles = {
@@ -68,6 +69,8 @@ export default function Portfolio() {
       <Projects projects={projects} />
       {/* Work Experience */}
       <Experience />
+       {/* About Me */}
+       <AboutMe /> {/* Agrega el componente AboutMe aquí */}
     </div>
   );
 }
