@@ -1,0 +1,103 @@
+/* Header de Work Experience */
+.work-experience-header {
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el título */
+    flex-shrink: 0;
+  }
+  
+  /* Ícono de Work */
+  .work-icon {
+    width: 33px;
+    height: 33px;
+    color: #FFF; /* Si usas SVG, asegúrate de que el color sea aplicable */
+  }
+  
+  /* Título de Work Experience */
+  .work-experience-header h2 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .job-card .date {
+    height: 18px;
+    align-self: stretch;
+    color: #BFB8B8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /* Estilo para los títulos de roles (como Backend Developer, UX/UI Designer, etc.) */
+.job-card .role {
+    height: 36px;
+    align-self: stretch;
+    color: #1D9CD9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .job-card .company { 
+    height: 36px;
+    align-self: stretch;
+    color: #1D9CD9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .job-card .description {
+    align-self: stretch;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* Estilo para los botones */
+.job-card .actions button {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 5px; /* Espacio entre el ícono y el texto */
+    border-radius: 8px;
+    border: 1px solid #041624;
+    background: transparent; /* Fondo transparente */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover para los botones */
+  .job-card .actions button:hover {
+    background-color: #041624; /* Fondo oscuro al pasar el cursor */
+  }
+  
+  /* Estilo para el texto dentro de los botones */
+  .job-card .actions button span {
+    color: #00D8FF !important; /* Fuerza el color azul claro */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  /* Estilo para los íconos dentro de los botones */
+  .job-card .actions button img {
+    width: 24px;
+    height: 24px;
+  }

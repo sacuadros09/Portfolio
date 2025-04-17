@@ -2,6 +2,7 @@ import "./portfolio.css";
 import { Home } from "../../components/Home/home";
 import { Carrousel } from "../../components/Carrousel/carrousel";
 import { Projects } from "../../components/Projects/projects";
+import { Experience } from "../../components/Experience/work_experience";
 
 export default function Portfolio() {
   const titles = {
@@ -65,6 +66,8 @@ export default function Portfolio() {
       <Carrousel items={carrouselItems} />
       {/* Projects */}
       <Projects projects={projects} />
+      {/* Work Experience */}
+      <Experience />
     </div>
   );
 }
