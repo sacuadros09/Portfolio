@@ -60,15 +60,17 @@ export function Experience() {
         <h2>Work Experience</h2>
       </div>
       <div className="timeline">
+        <img src="/time-line.png" alt="Timeline" className="timeline-image" />
         {experiences.map((job, index) => (
           <div key={index} className="job-card">
-            <div className="timeline-point"></div>
-            <div className="job-content">
+            <div className="job-content-wrapper">
               <p className="date">{job.date}</p>
-              <h3>
-                <span className="role">{job.role}</span> – <span className="company">{job.company}</span>
-              </h3>
-              <p className="description">{job.description}</p>
+              <div className="title-description">
+                <h3>
+                  <span className="role">{job.role}</span> – <span className="company">{job.company}</span>
+                </h3>
+                <p className="description">{job.description}</p>
+              </div>
               <div className="actions">
                 {job.actions.map((action, actionIndex) => (
                   <button key={actionIndex}>
