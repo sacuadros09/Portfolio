@@ -12,6 +12,7 @@ height: 515px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 0;
   }
   
   
@@ -20,8 +21,8 @@ height: 515px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
     align-self: stretch;
+    text-align: left;
   }
 
   /* Descripción general */
@@ -30,15 +31,13 @@ height: 515px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     line-height: normal;
-    text-align: left;
   }
   
-  /* Primera descripción */
   .about-me-description-1 {
     color: #FFF;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 20px; /* Espacio entre las dos descripciones */
+    margin-bottom: 0; /* ↓ Eliminado espacio entre textos */
   }
   
   /* Segunda descripción */
@@ -89,10 +88,10 @@ height: 515px;
     width: 569px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 10px;
   }
 
-.abot-me {
+.about-me {
     display: inline-flex;
 align-items: flex-start;
 }
