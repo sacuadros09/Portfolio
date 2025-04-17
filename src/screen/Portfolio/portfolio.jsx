@@ -1,6 +1,7 @@
-import "./portfolio.css"
+import "./portfolio.css";
 import { Home } from "../../components/Home/home";
 import { Carrousel } from "../../components/Carrousel/carrousel";
+import { Projects } from "../../components/Projects/projects";
 
 export default function Portfolio() {
   const titles = {
@@ -39,6 +40,18 @@ export default function Portfolio() {
     { icon: "/python-logo.png", text: "Python", className: "icon-python" },
   ];
 
+  const projects = [
+    {
+      image: "/One Party.png",
+      icon: "/figma-logo.png", // Ícono del botón superior
+      buttonText: "Figma", // Texto del botón superior
+      footerIcon: "/behance-icon.png", // Ícono del botón inferior
+      footerButtonText: "Behance", // Texto del botón inferior
+      title: "One Party",
+      description: "The purpose of One Party is to create a board game that combines competitiveness, fun, and teamwork, offering players engaging.",
+    },
+  ];
+
   return (
     <div>
       <Home
@@ -50,6 +63,8 @@ export default function Portfolio() {
       />
       {/* Carrusel */}
       <Carrousel items={carrouselItems} />
+      {/* Projects */}
+      <Projects projects={projects} />
     </div>
   );
 }

@@ -1,0 +1,170 @@
+/* Sección del título y los filtros */
+
+
+/* Título de la sección Projects */
+.projects-title {
+    align-self: stretch;
+    color: #00D8FF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .project-text-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  /* Textos debajo del proyecto */
+  .project-text {
+    height: 30px;
+    align-self: stretch;
+    color: #FFF; /* Solo el texto es blanco */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  /* Botones de los filtros */
+.filter-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background: #082c63; /* Fondo al pasar el cursor */
+  }
+  
+  /* Botones de las tarjetas */
+  .project-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent; 
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none; 
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+border: 1px solid #041624;
+  }
+  
+  .project-button:hover {
+    background: #104469; 
+  }
+
+  /* Sección completa de la tarjeta */
+.project-card {
+    display: flex;
+    width: 351px;
+    height: 502px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    border-radius: 16px;
+border: 1px solid #00D8FF;
+  }
+  
+  /* Imagen de la tarjeta */
+  .project-image {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 8px;
+    width: 100%; 
+    height: auto; 
+  }
+  
+  /* Sección del botón superior (ícono y texto) */
+  .project-button-section {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Ícono de Figma */
+  .button-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  /* Tipografía del texto del botón */
+  .project-button-text {
+    color: #00D8FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+
+/* Título de la tarjeta */
+.project-title {
+    display: flex; /* Configura el título como un contenedor flexible */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  /* Descripción de la tarjeta */
+.project-description {
+    align-self: stretch;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  .project-footer-button {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #041624;
+    background: #000D17;
+  }
+  
+  .project-footer-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .project-footer-button-text {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  
