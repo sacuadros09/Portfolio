@@ -136,12 +136,35 @@
     margin-bottom: 50px;
   }
 
-  .timeline-image {
-    width: 12px;
-    height: auto; /* para que crezca dinámico según contenido */
-    margin-right: 30px; /* espacio entre línea y tarjetas */
-    position: relative;
-  }
+  /* Contenedor principal de la sección */
+/* Contenedor principal de la sección */
+.work-experience {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente todo el contenido */
+  align-items: center; /* Centra verticalmente todo el contenido */
+  gap: 30px; /* Espacio entre la línea y el contenido */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
+}
+
+/* Imagen del timeline */
+.timeline-image {
+  width: 12px;
+  height: auto; /* Permite que la altura sea dinámica según el contenido */
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  margin: 22px 0 0 0; /* Baja la línea 10px */
+  position: relative; /* Asegura que la posición sea relativa al contenedor */
+}
+
+/* Contenido de las tarjetas */
+.job-card .job-content-wrapper {
+  display: flex;
+  width: 668px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-bottom: 50px;
+}
   
 
  

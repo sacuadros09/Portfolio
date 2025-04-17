@@ -55,34 +55,34 @@ export function Experience() {
 
   return (
     <section className="work-experience">
+    <img src="/time-line.png" alt="Timeline" className="timeline-image" />
+    <div>
       <div className="work-experience-header">
         <img src="/work-icon.png" alt="Work Icon" className="work-icon" />
         <h2>Work Experience</h2>
       </div>
-      <div className="timeline">
-        <img src="/time-line.png" alt="Timeline" className="timeline-image" />
-        {experiences.map((job, index) => (
-          <div key={index} className="job-card">
-            <div className="job-content-wrapper">
-              <p className="date">{job.date}</p>
-              <div className="title-description">
-                <h3>
-                  <span className="role">{job.role}</span> – <span className="company">{job.company}</span>
-                </h3>
-                <p className="description">{job.description}</p>
-              </div>
-              <div className="actions">
-                {job.actions.map((action, actionIndex) => (
-                  <button key={actionIndex}>
-                    <img src={action.icon} alt={`${action.label} Icon`} className="action-icon" />
-                    {action.label}
-                  </button>
-                ))}
-              </div>
+      {experiences.map((job, index) => (
+        <div key={index} className="job-card">
+          <div className="job-content-wrapper">
+            <p className="date">{job.date}</p>
+            <div className="title-description">
+              <h3>
+                <span className="role">{job.role}</span> – <span className="company">{job.company}</span>
+              </h3>
+              <p className="description">{job.description}</p>
+            </div>
+            <div className="actions">
+              {job.actions.map((action, actionIndex) => (
+                <button key={actionIndex}>
+                  <img src={action.icon} alt={`${action.label} Icon`} className="action-icon" />
+                  {action.label}
+                </button>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </section>
+        </div>
+      ))}
+    </div>
+  </section>
   );
 }
