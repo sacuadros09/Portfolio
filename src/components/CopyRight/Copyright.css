@@ -1,0 +1,25 @@
+.copyright-section {
+    display: flex; /* Alineación horizontal */
+    align-items: center; /* Centra verticalmente el ícono y el texto */
+    gap: 4px; /* Espacio entre el ícono y el texto */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.copyright-icon {
+    width: 20px;
+    height: 19.949px;
+    flex-shrink: 0;
+    fill: #FFF;
+}
+
+.copyright-text {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap; /* Asegura que el texto no se divida */
+}

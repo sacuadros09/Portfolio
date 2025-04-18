@@ -12,8 +12,8 @@ export function Experience() {
         The goal is to optimize business assessment through automated data collection and analysis.
       `,
       actions: [
-        { label: "Preview", icon: "/link-icon.png" },
-        { label: "Code", icon: "/git-icon.png" },
+        { label: "Preview", icon: "/link-icon.png", link: "", disabled: true },
+        { label: "Code", icon: "/git-icon.png", link: "https://github.com/juanmartinlopeze/Growinn-index-test.git", disabled: true },
       ],
     },
     {
@@ -26,8 +26,8 @@ export function Experience() {
         The system included a task-based observation history.
       `,
       actions: [
-        { label: "Preview", icon: "/link-icon.png" },
-        { label: "Code", icon: "/git-icon.png" },
+        { label: "Preview", icon: "/link-icon.png", link: "https://ecopapel-preview.com", disabled: true },
+        { label: "Code", icon: "/git-icon.png", link: "https://github.com/ecopapel-project", disabled: true },
       ],
     },
     {
@@ -39,7 +39,9 @@ export function Experience() {
         Created interactive prototypes in Figma for user testing and stakeholder validation.
         Collaborated with technical teams on iterations based on real feedback.
       `,
-      actions: [{ label: "Preview", icon: "/link-icon.png" }],
+      actions: [
+        { label: "Preview", icon: "/link-icon.png", link: "https://www.behance.net/gallery/213372503/Conecta-Digital-UX-UI" },
+      ],
     },
     {
       date: "March 2023 – June 2023",
@@ -49,10 +51,11 @@ export function Experience() {
         Led a team of 4 people, coordinating communication between the client and the team to ensure requirements were met.
         Ensured product alignment with user expectations and project goals.
       `,
-      actions: [{ label: "Preview", icon: "/link-icon.png" }],
+      actions: [
+        { label: "Preview", icon: "/link-icon.png", link: "https://www.behance.net/gallery/172971959/TEApoyamos" },
+      ],
     },
   ];
-
   return (
     <section className="work-experience">
     <img src="/time-line.png" alt="Timeline" className="timeline-image" />
@@ -72,13 +75,18 @@ export function Experience() {
               <p className="description">{job.description}</p>
             </div>
             <div className="actions">
-              {job.actions.map((action, actionIndex) => (
-                <button key={actionIndex}>
-                  <img src={action.icon} alt={`${action.label} Icon`} className="action-icon" />
-                  {action.label}
-                </button>
-              ))}
-            </div>
+  {job.actions.map((action, actionIndex) => (
+    <button
+      key={actionIndex}
+      onClick={() => !action.disabled && window.open(action.link, "_blank")} 
+      disabled={action.disabled} 
+      className={`action-button ${action.disabled ? "disabled" : ""}`} // 
+    >
+      <img src={action.icon} alt={`${action.label} Icon`} className="action-icon" />
+      {action.label}
+    </button>
+  ))}
+</div>
           </div>
         </div>
       ))}

@@ -4,6 +4,7 @@ import { Carrousel } from "../../components/Carrousel/carrousel";
 import { Projects } from "../../components/Projects/projects";
 import { Experience } from "../../components/Experience/work_experience";
 import { AboutMe } from "../../components/About Me/about_me";
+import { Copyright } from "../../components/CopyRight/Copyright";
 
 export default function Portfolio() {
   const titles = {
@@ -160,6 +161,7 @@ export default function Portfolio() {
       <section id="section2">
         <AboutMe />
       </section>
+      <Copyright/>
     </div>
   );
 }

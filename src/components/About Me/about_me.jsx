@@ -2,9 +2,9 @@ import "./about_me.css";
 
 export function AboutMe() {
   const buttons = [
-    { icon: "/git-icon.png", text: "Github" },
-    { icon: "/linkedin-icono.png", text: "LinkedIn" },
-    { icon: "/behance-icon.png", text: "Behance" },
+    { icon: "/git-icon.png", text: "Github", link: "https://github.com/sacuadros09?tab=repositories" },
+    { icon: "/linkedin-icono.png", text: "LinkedIn", link: "https://www.linkedin.com/in/santiago-cuadros/" },
+    { icon: "/behance-icon.png", text: "Behance", link: "https://www.behance.net/sacuma09" },
   ];
 
   return (
@@ -21,13 +21,17 @@ export function AboutMe() {
       </p>
     </div>
     <div className="about-me-buttons">
-      {buttons.map((button, index) => (
-        <button key={index} className="about-me-button">
-          <img src={button.icon} alt={`${button.text} Icon`} className="button-icon" />
-          {button.text}
-        </button>
-      ))}
-    </div>
+  {buttons.map((button, index) => (
+    <button
+      key={index}
+      className="about-me-button"
+      onClick={() => window.open(button.link, "_blank")} // Abre el enlace en una nueva pestaña
+    >
+      <img src={button.icon} alt={`${button.text} Icon`} className="button-icon" />
+      {button.text}
+    </button>
+  ))}
+</div>
   </div>
 </section>
   );
