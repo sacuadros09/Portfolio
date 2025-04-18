@@ -13,8 +13,16 @@
   }
 
   .navbar {
+    position: fixed;
+    top: 0;
     display: flex;
     width: 1118px;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);         
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   }

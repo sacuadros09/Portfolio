@@ -2,6 +2,9 @@
 body {
   background-color: #000307; /* Fondo negro */
 }
+html {
+  scroll-behavior: smooth;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;

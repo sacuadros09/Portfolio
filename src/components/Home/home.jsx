@@ -15,12 +15,16 @@ export function Home({ titles, subtitles, descriptions, buttons, image }) {
 
          
           <div className="home-subtitles">
-            {subtitles.map((subtitle, index) => (
-              <h2 key={index} className={`home-subtitle ${subtitle.className || ""}`}>
-                {subtitle.content}
-              </h2>
-            ))}
-          </div>
+  {subtitles.map((subtitle, index) => (
+    <h2 key={index} className={`home-subtitle ${subtitle.className || ""}`}>
+      {subtitle.content.split(" ").map((word, wordIndex) => (
+        <span key={wordIndex} className="home-word" style={{ animationDelay: `${wordIndex * 0.3}s` }}>
+          {word}
+        </span>
+      ))}
+    </h2>
+  ))}
+</div>
         </div>
 
        
@@ -36,17 +40,28 @@ export function Home({ titles, subtitles, descriptions, buttons, image }) {
 
           
           <div className="home-buttons">
-            {buttons.map((button, index) => (
-              <button
-                key={index}
-                className={`home-button ${button.className || ""}`}
-                onClick={button.onClick}
-              >
-                {button.icon && <span className="button-icon">{button.icon}</span>}
-                {button.text}
-              </button>
-            ))}
-          </div>
+  {buttons.map((button, index) => (
+    <button
+      key={index}
+      className={`home-button ${button.className || ""}`}
+      onClick={() => {
+        if (button.text === "Start your project") {
+          window.open("https://www.linkedin.com/in/santiago-cuadros/", "_blank"); // Abre el enlace en una nueva pestaña
+        } else if (button.text === "See my CV") {
+          const link = document.createElement("a");
+          link.href = "/Cv-English.pdf"; // Ruta al archivo PDF
+          link.download = "Santiago_Cuadros_CV.pdf"; // Nombre del archivo descargado
+          link.click();
+        } else {
+          button.onClick && button.onClick();
+        }
+      }}
+    >
+      {button.icon && <span className="button-icon">{button.icon}</span>}
+      {button.text}
+    </button>
+  ))}
+</div>
         </div>
       </div>
 
