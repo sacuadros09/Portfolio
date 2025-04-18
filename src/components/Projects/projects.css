@@ -87,20 +87,29 @@ border: 1px solid #041624;
 border: 1px solid #00D8FF;
   }
   
-  /* Imagen de la tarjeta */
-  .project-image-wrapper {
-    width: 100%;
-    height: 220px; /* altura fija igual para todas */
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius:18px;
-  }
+  /* Contenedor de la imagen */
+.project-image-wrapper {
+  width: 100%;
+  height: 220px; /* Altura fija */
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Imagen con animación */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.project-image-wrapper:hover .project-image {
+  transform: scale(1.1); /* Zoom al 110% */
+  filter: brightness(1.2); /* Aumenta el brillo */
+}
   
   /* Sección del botón superior (ícono y texto) */
   .project-button-section {
@@ -188,3 +197,9 @@ border: 1px solid #00D8FF;
     align-items: flex-start;
   }
   
+  .project-footer-section {
+  display: flex; /* Cambia a flexbox para alinear los botones horizontalmente */
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: flex-start; /* Alinea los botones al inicio */
+  flex-wrap: wrap; /* Permite que los botones se ajusten si no caben */
+}

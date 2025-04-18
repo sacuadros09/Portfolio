@@ -30,7 +30,9 @@ export function Projects({ projects }) {
       <div className="projects-cards">
         {filteredProjects.map((project, index) => (
           <div key={index} className="project-card">
-            <img src={project.image} alt={project.title} className="project-image" />
+            <div className="project-image-wrapper">
+              <img src={project.image} alt={project.title} className="project-image" />
+            </div>
             <div className="project-content-wrapper">
               <div className="project-button-section">
                 {project.buttons &&
