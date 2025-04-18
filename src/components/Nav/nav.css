@@ -1,28 +1,33 @@
-.navbar-logo img {
-    width: 47px;
-    height: 38px;
-  }
-  
-  .navbar-links {
-    display: flex;
-    width: 514px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-shrink: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-  .navbar {
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 1118px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px);         
-    -webkit-backdrop-filter: blur(10px); 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  }
+.navbar-logo img {
+  width: 47px;
+  height: 38px;
+}
+
+.navbar-links {
+  display: flex;
+  width: 514px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  font-family: 'Poppins', sans-serif; /* Aplica la tipografía Poppins */
+  font-weight: 400; /* Regular */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 1280px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-family: 'Poppins', sans-serif; /* Aplica la tipografía Poppins */
+  font-weight: 400; /* Regular */
+}
