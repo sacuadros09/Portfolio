@@ -45,10 +45,10 @@ export default function Portfolio() {
   const projects = [
     {
       image: "/One Party.png",
-      icon: "/figma-logo.png", // Ícono del botón superior
-      buttonText: "Figma", // Texto del botón superior
-      footerIcon: "/behance-icon.png", // Ícono del botón inferior
-      footerButtonText: "Behance", // Texto del botón inferior
+      icon: "/figma-logo.png", 
+      buttonText: "Figma", 
+      footerIcon: "/behance-icon.png", 
+      footerButtonText: "Behance", 
       title: "One Party",
       description: "The purpose of One Party is to create a board game that combines competitiveness, fun, and teamwork, offering players engaging.",
     },
@@ -70,7 +70,7 @@ export default function Portfolio() {
       {/* Work Experience */}
       <Experience />
        {/* About Me */}
-       <AboutMe /> {/* Agrega el componente AboutMe aquí */}
+       <AboutMe /> 
     </div>
   );
 }

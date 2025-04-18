@@ -23,7 +23,7 @@
   .project-text {
     height: 30px;
     align-self: stretch;
-    color: #FFF; /* Solo el texto es blanco */
+    color: #FFF; 
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -37,8 +37,8 @@
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
-    background: transparent; /* Fondo transparente */
-    border: none; /* Elimina el borde predeterminado */
+    background: transparent; 
+    border: none; 
     border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
@@ -100,6 +100,7 @@ border: 1px solid #00D8FF;
     padding: 5px;
     align-items: center;
     gap: 5px;
+    margin-bottom: 10px;
   }
   
   /* Ícono de Figma */
@@ -121,14 +122,16 @@ border: 1px solid #00D8FF;
 
 /* Título de la tarjeta */
 .project-title {
-    display: flex; /* Configura el título como un contenedor flexible */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
+    display: flex;
+    align-items: center; 
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 5px;
+    margin-top: 0px;
   }
   
   /* Descripción de la tarjeta */
@@ -140,7 +143,9 @@ border: 1px solid #00D8FF;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left; 
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   .project-footer-button {

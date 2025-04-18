@@ -3,7 +3,7 @@
     display: inline-flex;
     height: 40px;
     align-items: center;
-    gap: 10px; /* Espacio entre el ícono y el título */
+    gap: 10px; 
     flex-shrink: 0;
     margin-top: 40px;
   }
@@ -12,7 +12,7 @@
   .work-icon {
     width: 33px;
     height: 33px;
-    color: #FFF; /* Si usas SVG, asegúrate de que el color sea aplicable */
+    color: #FFF; 
   }
   
   /* Título de Work Experience */
@@ -62,7 +62,7 @@
   }
     
   .job-card h3 {
-    margin-bottom: 0; /* <-- asegúrate de tener esto */
+    margin-bottom: 0; 
   }
 
   .job-card .description {
@@ -82,22 +82,22 @@
     display: flex;
     padding: 5px;
     align-items: center;
-    gap: 5px; /* Espacio entre el ícono y el texto */
+    gap: 5px; 
     border-radius: 8px;
     border: 1px solid #041624;
-    background: transparent; /* Fondo transparente */
+    background: transparent; 
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   /* Hover para los botones */
   .job-card .actions button:hover {
-    background-color: #041624; /* Fondo oscuro al pasar el cursor */
+    background-color: #041624; 
   }
   
   /* Estilo para el texto dentro de los botones */
   .job-card .actions button {
-    color: #00D8FF; /* Aplica el color directamente al texto */
+    color: #00D8FF; 
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -114,7 +114,7 @@
   .job-card .actions {
     display: flex;
     align-items: center;
-    gap: 13px; /* Espacio entre los botones */
+    gap: 13px; 
   }
 
   .job-card .title-description {
@@ -132,27 +132,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 auto; /* ← Esto centra horizontalmente */
+    margin: 0 auto; 
     margin-bottom: 50px;
   }
 
-  /* Contenedor principal de la sección */
 /* Contenedor principal de la sección */
 .work-experience {
   display: flex;
-  justify-content: center; /* Centra horizontalmente todo el contenido */
-  align-items: center; /* Centra verticalmente todo el contenido */
-  gap: 30px; /* Espacio entre la línea y el contenido */
-  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  justify-content: center; 
+  align-items: center; 
+  gap: 30px; 
+  height: 100%; 
 }
 
 /* Imagen del timeline */
 .timeline-image {
   width: 12px;
-  height: auto; /* Permite que la altura sea dinámica según el contenido */
-  flex-shrink: 0; /* Evita que la imagen se reduzca */
-  margin: 22px 0 0 0; /* Baja la línea 10px */
-  position: relative; /* Asegura que la posición sea relativa al contenedor */
+  height: auto; 
+  flex-shrink: 0; 
+  margin: 22px 0 0 0; 
+  position: relative; 
 }
 
 /* Contenido de las tarjetas */
@@ -162,7 +161,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto; 
   margin-bottom: 50px;
 }
   

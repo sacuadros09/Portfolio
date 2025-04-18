@@ -4,7 +4,7 @@ import "./nav_bar.css"
 export default function NavBar() {
     return (
       <div>
-        {/* Barra de navegación con enlaces */}
+       
         <Nav
           img="/logo-marca.png"
           links={[

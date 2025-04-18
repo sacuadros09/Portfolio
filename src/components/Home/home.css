@@ -46,8 +46,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 60px;
-    margin: 0; /* Elimina márgenes predeterminados */
-    color: #FFFFFF; /* Color blanco */
+    margin: 0; 
+    color: #FFFFFF; 
   }
   
   /* Subtítulos */
@@ -59,10 +59,10 @@
   
   .home-subtitle {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Semibold */
+    font-weight: 600; 
     font-size: 25px;
-    margin: 0; /* Elimina márgenes predeterminados */
-    color: #1D9CD9; /* Color azul */
+    margin: 0; 
+    color: #1D9CD9; 
   }
   
   /* Descripciones */

@@ -3,10 +3,10 @@ import "./carrousel.css";
 export function Carrousel({ items }) {
   return (
     <div className="carrousel-section">
-      {/* Línea superior */}
+      
       <div className="carrousel-line"></div>
 
-      {/* Contenedor del carrusel */}
+     
       <div className="carrousel-container">
         <div className="carrousel">
           {items.map((item, index) => (
@@ -15,7 +15,7 @@ export function Carrousel({ items }) {
               <span className="carrousel-text">{item.text}</span>
             </button>
           ))}
-          {/* Duplicar los elementos para el bucle infinito */}
+         
           {items.map((item, index) => (
             <button key={`duplicate-${index}`} className="carrousel-button">
               <img src={item.icon} alt={item.text} className={`carrousel-icon ${item.className}`} />
@@ -25,7 +25,7 @@ export function Carrousel({ items }) {
         </div>
       </div>
 
-      {/* Línea inferior */}
+      
       <div className="carrousel-line"></div>
     </div>
   );
