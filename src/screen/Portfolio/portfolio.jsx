@@ -26,7 +26,7 @@ export default function Portfolio() {
   ];
 
   const image = {
-    src: "/cuadros-img.png",
+    src: "/santiago-img.png",
     alt: "Santiago Cuadros",
   };
 
@@ -115,7 +115,7 @@ export default function Portfolio() {
       category: ["UI Design", "UX", "All"],
     },
     {
-      image: "/gorilla-img.png",
+      image: "/gorilla.png",
       footerButtons: [
         {
           icon: "/behance-icon.png",

@@ -5,6 +5,7 @@
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 100px;
 }
 
 .copyright-icon {
