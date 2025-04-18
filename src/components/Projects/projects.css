@@ -188,11 +188,3 @@ border: 1px solid #00D8FF;
     align-items: flex-start;
   }
   
-  .pojects-sections{
-    display: flex;
-width: 1119px;
-flex-direction: column;
-align-items: center;
-gap: 47px;
-  }
-  

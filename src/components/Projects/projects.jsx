@@ -5,8 +5,8 @@ export function Projects({ projects }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects = selectedCategory === "All"
-  ? projects
-  : projects.filter((project) => project.category.includes(selectedCategory));
+    ? projects
+    : projects.filter((project) => project.category.includes(selectedCategory));
 
   return (
     <div className="projects-section">
@@ -30,15 +30,20 @@ export function Projects({ projects }) {
       <div className="projects-cards">
         {filteredProjects.map((project, index) => (
           <div key={index} className="project-card">
-            <div className="project-image-wrapper">
-  <img src={project.image} alt={project.title}  className="project-image" />
-</div>
+            <img src={project.image} alt={project.title} className="project-image" />
             <div className="project-content-wrapper">
               <div className="project-button-section">
-                <button className="project-button">
-                  <img src={project.icon} alt="Icon" className="button-icon" />
-                  <span className="project-button-text">{project.buttonText}</span>
-                </button>
+                {project.buttons &&
+                  project.buttons.map((button, buttonIndex) => (
+                    <button
+                      key={buttonIndex}
+                      className="project-button"
+                      onClick={() => window.open(button.link, "_blank")}
+                    >
+                      <img src={button.icon} alt={`${button.text} Icon`} className="button-icon" />
+                      <span className="project-button-text">{button.text}</span>
+                    </button>
+                  ))}
               </div>
               <div className="project-content-footer-wrapper">
                 <div className="project-content-section">
@@ -46,10 +51,21 @@ export function Projects({ projects }) {
                   <p className="project-description">{project.description}</p>
                 </div>
                 <div className="project-footer-section">
-                  <button className="project-footer-button">
-                    <img src={project.footerIcon} alt="Footer Icon" className="project-footer-icon" />
-                    <span className="project-footer-button-text">{project.footerButtonText}</span>
-                  </button>
+                  {project.footerButtons &&
+                    project.footerButtons.map((footerButton, footerIndex) => (
+                      <button
+                        key={footerIndex}
+                        className="project-footer-button"
+                        onClick={() => window.open(footerButton.link, "_blank")}
+                      >
+                        <img
+                          src={footerButton.icon}
+                          alt={`${footerButton.text} Icon`}
+                          className="project-footer-icon"
+                        />
+                        <span className="project-footer-button-text">{footerButton.text}</span>
+                      </button>
+                    ))}
                 </div>
               </div>
             </div>

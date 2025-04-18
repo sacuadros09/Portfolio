@@ -45,72 +45,86 @@ export default function Portfolio() {
   const projects = [
     {
       image: "/One Party.png",
-      icon: "/figma-logo.png", 
-      buttonText: "Figma", 
-      footerIcon: "/behance-icon.png", 
-      footerButtonText: "Behance", 
+      footerButtons: [
+        {
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/208285097/One-Party-Board-Game",
+        },
+      ],
       title: "One Party",
       description: "The purpose of One Party is to create a board game that combines competitiveness, fun, and teamwork, offering players engaging.",
       category: ["UI Design", "UX", "All"],
     },
     {
       image: "/Tumerque.png",
-      icon: "/figma-logo.png",
-      buttonText: "Figma",
-      footerIcon: "/behance-icon.png",
-      footerButtonText: "Behance",
+      footerButtons: [
+        {
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/210954129/TURMEQUE-REDESIGN",
+        },
+      ],
       title: "Tumerqué",
       description: "Redesign of the Tumerqué website, supported by usability tests and case analysis to assess the feasibility of the new version.",
       category: ["UI Design", "UX", "All"],
     },
     {
       image: "/Bancoldex.png",
-      icon: "/figma-logo.png",
-      buttonText: "React",
-      footerIcon: "/behance-icon.png",
-      footerButtonText: "Behance",
+      footerButtons: [
+        {
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/213372503/Conecta-Digital-UX-UI",
+        },
+      ],
       title: "Bancoldex",
       description: "Worked with Bancóldex to create a high-fidelity prototype for their Conecta Digital platform, focusing on enhancing and user engagement.",
       category: ["UI Design", "UX", "All"],
     },
     {
       image: "/zenvo.img.png",
-      buttons: [
+      footerButtons: [
         {
-          icon: "/react-logo.png",
-          text: "React",
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/195383185/Zenvo-Studio-portfolio",
         },
         {
-          icon: "/figma-logo.png",
-          text: "Figma",
+          icon: "/git-icon.png",
+          text: "GitHub",
+          link: "https://github.com/sacuadros09/Zenvo",
         },
       ],
-      footerIcon: "/behance-icon.png",
-      footerButtonText: "Behance",
       title: "Zenvo",
       description: "Group project focused on designing and developing digital portfolios. We collaborated to create a cohesive visual experience, named Zenvo",
       category: ["UI Design", "UX", "All", "Web Apps"],
     },
     {
       image: "/teapoyamos-img.png",
-      icon: "/react-logo.png",
-      buttonText: "React",
-      footerIcon: "/behance-icon.png",
-      footerButtonText: "Behance",
+      footerButtons: [
+        {
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/172971959/TEApoyamos",
+        },
+      ],
       title: "TEApoyamos",
       description: "Redesign of the TEApoyamos website, including the creation of a high-fidelity prototype to improve usability and consistency.",
       category: ["UI Design", "UX", "All"],
     },
     {
       image: "/gorilla-img.png",
-      icon: "/figma-logo.png",
-      buttonText: "Figma",
-      footerIcon: "/behance-icon.png",
-      footerButtonText: "Behance",
+      footerButtons: [
+        {
+          icon: "/behance-icon.png",
+          text: "Behance",
+          link: "https://www.behance.net/gallery/197610691/Gorilla-Tag-UX-CASE-STUDY",
+        },
+      ],
       title: "Gorilla Tag",
       description: "Use case analysis of the VR game Gorilla Tag, highlighting how the lack of an introduction or tutorial negatively impacts the player experience.",
       category: ["UI Design", "UX", "All"],
-      
     },
   ];
 

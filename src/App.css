@@ -2,6 +2,10 @@
 body {
   background-color: #000307; /* Fondo negro */
 }
+body {
+  margin: 0;
+  overflow-x: hidden; /* Previene scroll horizontal si algo se sale por error */
+}
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +15,8 @@ html {
   padding: 2rem;
   text-align: center;
 }
+
+
 
 .logo {
   height: 6em;
