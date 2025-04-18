@@ -1,0 +1,101 @@
+.about-me-image {
+    width: 514px;
+height: 515px;
+}
+
+/* Título */
+.about-me-title {
+    align-self: stretch;
+    color: #00D8FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  
+  
+  /* Sección que agrupa el título y la descripción */
+  .about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    text-align: left;
+  }
+
+  /* Descripción general */
+.about-me-description {
+    align-self: stretch;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  .about-me-description-1 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0; 
+  }
+  
+  /* Segunda descripción */
+  .about-me-description-2 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  /* Botones */
+.about-me-button {
+    display: flex;
+    height: 51px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px; 
+    border-radius: 16px;
+    border: 1px solid #041624;
+    background: #020E16;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-me-button:hover {
+    background-color: #041624; 
+  }
+  
+  /* Íconos dentro de los botones */
+  .button-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Sección que agrupa los botones */
+  .about-me-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+  }
+
+  /* Sección que agrupa el título, las descripciones y los botones */
+.about-me-content {
+    display: flex;
+    width: 569px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap;
+  }
+  

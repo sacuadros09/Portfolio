@@ -1,0 +1,46 @@
+.carrousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el carrusel horizontalmente */
+  gap: 30px;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+
+.carrousel-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center;
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  max-width: 1118px; /* Ancho máximo para mantener consistencia */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.carrousel {
+  display: flex;
+  gap: 20px;
+  height: 51px;
+  align-items: center;
+  flex-shrink: 0;
+  animation: scroll 20s linear infinite;
+}
+
+.carrousel-line {
+  width: 100%; /* Asegura que las líneas ocupen todo el ancho del contenedor */
+  max-width: 1118px; /* Mantén el ancho máximo consistente */
+  height: 1px;
+  background: #104469;
+  margin: 0 auto; /* Centra las líneas horizontalmente */
+}
+  
+  /* Animación de desplazamiento continuo */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-32%); 
+    }
+  }
