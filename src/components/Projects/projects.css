@@ -59,7 +59,8 @@
   }
   
   .filter-button:hover {
-    background: #082c63; /* Fondo al pasar el cursor */
+    background: #082c63;
+    padding: 8px 10px;
   }
   
   /* Botones de las tarjetas */
@@ -219,4 +220,8 @@ border: 1px solid #00D8FF;
 
 .projects-filters {
   margin-bottom: 30px; /* Ajusta este valor según la separación deseada */
+}
+
+.filter-button:focus {
+  outline: none;
 }

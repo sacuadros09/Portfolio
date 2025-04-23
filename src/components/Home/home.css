@@ -55,6 +55,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
   }
   
   .home-subtitle {
@@ -63,6 +64,7 @@
     font-size: 25px;
     margin: 0; 
     color: #1D9CD9; 
+    margin-top: 10px;
   }
   
   /* Descripciones */
