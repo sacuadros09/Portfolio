@@ -6,7 +6,7 @@ export default function NavBar() {
       <div>
        
         <Nav
-          img="/logo-marca.png"
+          img="/logo-marca1.png"
           links={[
             { href: "#section1", text: "Home", className: "navbar-text-home" },
             { href: "#section2", text: "About", className: "navbar-text-about" },
